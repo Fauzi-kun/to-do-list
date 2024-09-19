@@ -9,7 +9,15 @@ addList.addEventListener('click', function(){
     }
     else{
         let list = document.createElement("li");
-        list.innerHTML = inputBox.value + priority.value;
+        list.innerHTML = inputBox.value + "-" + priority.value;
         listBody.appendChild(list);
+        inputBox.value = '';
+        saveData();
     }
 })
+function saveData(){
+    localStorage.setItem("data", listBody.innerHTML);
+}
+function showTask(){
+    listBody.innerHTML = localStorage.getItem("data");
+}
