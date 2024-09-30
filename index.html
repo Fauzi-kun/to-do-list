@@ -4,30 +4,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="profil">
-
+    <div class="wrapper">
+    <div class="profil" id="profil">
+        <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        </div>
+        <div>
+        <label for="pos">Position</label>
+        <input type="text" id="pos">
+        </div>
+        <button class="layout" id="btn-name">Submit</button>
     </div>
-    <div class="input">
-        <form action="#">
-            <input type="text" id="input-box">
-            <br>
-            <select name="priority" id="priority">
+    <div>
+            <textarea name="" id="input-box"></textarea>
+            <div>
+            <select name="priority" id="priority" class="layout">
                 <option value="low">Low</option>
                 <option value="medium">Medium</option>
                 <option value="high">High</option>
-            </select><br>
-            <button id="add">submit</button>
-        </form>
+            </select>
+            </div>
+            <button id="add" class="layout">submit</button>
     </div>
-    <div class="body">
-        <ul id="list-body">
-        </ul>
+    <div>
+        <ul id="list-task"></ul>
     </div>
-    <div class="done">
-        <table>
-
-        </table>
+    <button id="hpsTodo" class="layout">Hapus to-do</button>
+    <div>
+        <div>
+            <ul id="done-task"></ul>
+        </div>
+        <button id="hpsDone" class="layout">Hapus done</button>
     </div>
+    <button id="hpsSemua" class="layout">Hapus semua</button>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
