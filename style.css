@@ -1,34 +1,41 @@
-
-.wrapper{
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    background-color: lightgreen;
-    padding: 4%;
-    border-radius: 10px;
+.wrapper {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  background-color: lightgreen;
+  padding: 4%;
+  border-radius: 10px;
 }
-.profil input{
-    width: 70%;
-    margin: 5px;
+#list-task {
+  list-style-type: none;
+  text-align: left;
 }
-#input-box{
-    width: 80%;
-    height: 100px;
-    border-radius: 10px;
+#done-task {
+  list-style-type: none;
+  text-align: left;
 }
-label{
-    margin: 10px;
+.profil input {
+  width: 70%;
+  margin: 5px;
 }
-.layout{
-    color: white;
-    font-weight: bolder;
-    width: 80%;
-    height: 30px;
-    margin: 7px;
-    border-radius: 5px;
-    background-color:  #04aa6d;
-    border: none;
+#input-box {
+  width: 80%;
+  height: 100px;
+  border-radius: 10px;
 }
-.complete{
-    text-decoration: line-through;
+label {
+  margin: 10px;
+}
+.layout {
+  color: white;
+  font-weight: bolder;
+  width: 80%;
+  height: 30px;
+  margin: 7px;
+  border-radius: 5px;
+  background-color: #04aa6d;
+  border: none;
+}
+.complete {
+  text-decoration: line-through;
 }
